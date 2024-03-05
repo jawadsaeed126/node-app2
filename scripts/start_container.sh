@@ -13,4 +13,7 @@ aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --usernam
 docker pull $REPOSITORY_URI:latest
 
 # Run the Docker image as a container
-docker run -d -p 3001:3000 $REPOSITORY_URI:latest
+#docker run -d -p 3001:3000 $REPOSITORY_URI:latest
+
+cd /home/ubuntu/project-root/node-application2
+docker-compose up -d
